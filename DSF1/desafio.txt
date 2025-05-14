@@ -32,25 +32,6 @@ Criar uma API RESTful usando Node.js e Express para gerenciar tarefas
    - Retornar erro caso o ID não seja encontrado
 
 ------------------------------------------------------------
-🌟 DESAFIO EXTRA (OPCIONAL):
-------------------------------------------------------------
-
-- Adicionar campos:
-  - dataCriacao (automática)
-  - dataConclusao (quando marcada como concluída)
-
-- Filtrar tarefas por conclusão:
-  - GET /tarefas?concluida=true ou false
-
-- Criar log de cada requisição em um arquivo .log
-
-- Organizar o projeto em camadas:
-  - /controllers
-  - /routes
-  - /data
-  - /services (opcional)
-
-------------------------------------------------------------
 📦 TECNOLOGIAS SUGERIDAS:
 ------------------------------------------------------------
 
