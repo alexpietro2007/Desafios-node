@@ -1,0 +1,82 @@
+============================================================
+                DESAFIO NODE.JS - GERENCIADOR DE TAREFAS
+============================================================
+
+💻 OBJETIVO:
+Criar uma API RESTful usando Node.js e Express para gerenciar tarefas
+(ToDo List). Os dados devem ser persistidos em um arquivo JSON local.
+
+------------------------------------------------------------
+📋 FUNCIONALIDADES OBRIGATÓRIAS:
+------------------------------------------------------------
+
+1. Rotas da API:
+
+   - GET /tarefas           → Lista todas as tarefas
+   - GET /tarefas/:id       → Retorna uma tarefa específica
+   - POST /tarefas          → Cria uma nova tarefa
+   - PUT /tarefas/:id       → Atualiza uma tarefa existente
+   - DELETE /tarefas/:id    → Remove uma tarefa
+
+2. Estrutura da Tarefa:
+   - id: gerado automaticamente (ex: Date.now() ou uuid)
+   - titulo: string
+   - descricao: string
+   - concluida: boolean
+
+3. Persistência de Dados:
+   - Os dados devem ser salvos em um arquivo chamado: tarefas.json
+
+4. Validações:
+   - Os campos "titulo" e "descricao" não podem estar vazios
+   - Retornar erro caso o ID não seja encontrado
+
+------------------------------------------------------------
+🌟 DESAFIO EXTRA (OPCIONAL):
+------------------------------------------------------------
+
+- Adicionar campos:
+  - dataCriacao (automática)
+  - dataConclusao (quando marcada como concluída)
+
+- Filtrar tarefas por conclusão:
+  - GET /tarefas?concluida=true ou false
+
+- Criar log de cada requisição em um arquivo .log
+
+- Organizar o projeto em camadas:
+  - /controllers
+  - /routes
+  - /data
+  - /services (opcional)
+
+------------------------------------------------------------
+📦 TECNOLOGIAS SUGERIDAS:
+------------------------------------------------------------
+
+- Node.js
+- Express
+- fs/promises (para ler e escrever arquivos)
+- express.json() (middleware para ler JSON)
+
+------------------------------------------------------------
+📁 EXEMPLO DE ESTRUTURA DE PASTAS:
+------------------------------------------------------------
+
+meu-todo/
+├── controllers/
+│   └── tarefaController.js
+├── routes/
+│   └── tarefaRoutes.js
+├── data/
+│   └── tarefas.json
+├── index.js
+
+------------------------------------------------------------
+🚀 DICA:
+------------------------------------------------------------
+
+Utilize a biblioteca "uuid" para gerar IDs únicos:
+npm install uuid
+
+Boa sorte! 💡
