@@ -1,0 +1,49 @@
+📘 DESAFIO: API DE LIVROS (Node.js + Express)
+
+Você deverá criar uma API REST para gerenciar um pequeno catálogo de livros.
+Os dados serão armazenados em um arquivo JSON chamado "livros.json".
+
+------------------------------------------
+📁 Estrutura esperada para cada livro:
+{
+  "id": "uuid",
+  "titulo": "O Senhor dos Anéis",
+  "autor": "J.R.R. Tolkien",
+  "ano": 1954
+}
+------------------------------------------
+
+✅ FUNCIONALIDADES OBRIGATÓRIAS:
+
+1. GET /livros
+- Retorna a lista de todos os livros.
+
+2. GET /livros/:id
+- Retorna os dados de um livro específico pelo id.
+
+3. POST /livros
+- Adiciona um novo livro.
+- Valide se os campos "titulo", "autor" e "ano" foram enviados.
+
+4. PUT /livros/:id
+- Atualiza os dados de um livro pelo id.
+- Deve permitir atualizar um ou mais campos.
+
+5. DELETE /livros/:id
+- Remove um livro do arquivo pelo id.
+
+------------------------------------------
+
+💡 DICAS:
+- Use fs.promises para ler e escrever no arquivo "livros.json".
+- Use uuid para gerar o id dos livros.
+- Use express.json() para tratar requisições JSON.
+- Trate erros como ID não encontrado e campos obrigatórios.
+
+------------------------------------------
+
+🧠 EXTRA (OPCIONAL):
+- Adicione o campo "dataCadastro" no momento da criação.
+- Implemente ordenação por ano: GET /livros?ordenar=ano
+
+------------------------------------------
